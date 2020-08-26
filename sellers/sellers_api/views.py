@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 from .models import Seller
 from .serializers import SellerSerializer
 
@@ -7,3 +7,4 @@ from .serializers import SellerSerializer
 class SellerApi(viewsets.ModelViewSet):
     queryset = Seller.objects.all().order_by('created_at')
     serializer_class = SellerSerializer
+    permission_classes = [permissions.IsAuthenticated]
