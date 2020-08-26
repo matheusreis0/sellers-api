@@ -12,4 +12,4 @@ class Seller(models.Model):
     origin = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     blocked = models.BooleanField()
-    blocked_reason = models.TextField()
+    blocked_reason = models.TextField(null=True)
