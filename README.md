@@ -4,6 +4,7 @@
 To create a container for postgres database, run:
 ```
 docker run --name <container_name> -p 5432:5432 \
+-v <volume_name>:/var/lib/postgresql/data \
 -e POSTGRES_PASSWORD=<some_password> \
 -e POSTGRES_USER=<user_name> \
 -e POSTGRES_DB=<database_name> \
