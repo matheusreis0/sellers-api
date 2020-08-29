@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'sellers_api',
         'USER': 'ote',
         'PASSWORD': 'secret',
-        'HOST': 'localhost',
+        'HOST': 'postgres',
         'PORT': ''                 # set to empty string for default
     }
 }
