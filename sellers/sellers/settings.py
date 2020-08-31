@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'sellers.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'topskills5',
-        'USER': 'topskills5',
-        'PASSWORD': 'ote2020',
-        'HOST': 'pgsql03-farm70.uni5.net',
+        'NAME': 'sellers_api',
+        'USER': 'ote',
+        'PASSWORD': 'secret',
+        'HOST': 'postgres',
         'PORT': ''                 # set to empty string for default
     }
 }
